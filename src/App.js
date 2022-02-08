@@ -9,8 +9,8 @@ import LatestComponent from './components/LatestComponent'
 function App() {
   return (
     <div>
-      <NavbarComponent />
-      <WelcomeComponent />
+      <NavbarComponent branding='StriveBook' titleColor='red' />
+      <WelcomeComponent branding='StriveBook' fontSize='100px' titleColor='red' fontSizeSubtitle='50px' />
       <LatestComponent />
       <FooterComponent />
     </div>

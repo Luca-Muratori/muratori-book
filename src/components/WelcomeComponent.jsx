@@ -1,16 +1,16 @@
 import { Jumbotron, Container } from 'react-bootstrap'
 
 
-const WelcomeComponent = () => {
+const WelcomeComponent = (props) => {
     return (
-        <Jumbotron fluid>
+        <Jumbotron >
             <Container>
-                <h1>Strivibook</h1>
-                <p>
-                    This is a e-commerce library
+                <h1 style={{ fontSize: props.fontSize, color: props.titleColor }}>{props.branding}</h1>
+                <p style={{ fontSize: props.fontSizeSubtitle }}>
+                    What do you want to read?
                 </p>
             </Container>
-        </Jumbotron>
+        </Jumbotron >
     )
 }
 

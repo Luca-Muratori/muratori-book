@@ -1,11 +1,25 @@
 const FooterComponent = () => {
     return (
         <>
-            <footer>
-                <p>Contact us</p>
-                <p>Work with us</p>
-                <p>Our writer</p>
-            </footer>
+            <div className='d-flex justify-content-around bg-light '>
+                <div>
+                    <p>Contact us</p>
+                    <p>Work with us</p>
+                    <p>Our writer</p>
+                </div>
+                <div>
+                    <p>Contact us</p>
+                    <p>Work with us</p>
+                    <p>Our writer</p>
+                </div>
+                <div>
+                    <p>Contact us</p>
+                    <p>Work with us</p>
+                    <p>Our writer</p>
+                </div>
+            </div>
+
+
         </>
 
     )
