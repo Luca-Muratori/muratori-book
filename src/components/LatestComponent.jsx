@@ -3,8 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import books from '../data/book.json'
 
 class LatestComponent extends Component {
-    state = { selectedBook: null }
-
     render() {
         return (
             <Container fluid>
