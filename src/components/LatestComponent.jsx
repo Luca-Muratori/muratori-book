@@ -7,15 +7,21 @@ class LatestComponent extends Component {
 
     render() {
         return (
-            <Container>
-                <Row>
-                    <Col>
-                        {
-                            books.map((book) => (
-                                <img key={book.asin} src={book.img} />
-                            ))
-                        }
-                    </Col>
+            <Container fluid>
+                <Row className='d-flex '>
+                    {
+                        books.map((book) => (
+                            <Col xs={12} lg={4} className=' my-3 d-flex border'>
+                                <img className='w-25 mx-3 ' key={book.asin} src={book.img} />
+                                <div>
+                                    <p className='font-weight-bold'>{book.title}</p>
+                                    <p>{book.price}</p>
+                                </div>
+
+                            </Col>
+                        ))
+                    }
+
                 </Row>
             </Container>
         )
